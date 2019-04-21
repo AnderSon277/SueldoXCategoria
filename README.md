@@ -1,0 +1,2 @@
+# SueldoXCategoria
+Deber
