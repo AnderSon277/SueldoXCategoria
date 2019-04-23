@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sueldo por Categoria</title>
+        <body>
+            <script>
+            var Sueldo,New_Sueldo=0,cat;
+            Sueldo=parseFloat(prompt("Ingrese su sueldo basico:"));
+            cat=parseInt(prompt("Ingrese su categoria: "));
+            switch(cat){
+            case 1:
+                New_Sueldo = Sueldo + (Sueldo * 0.15);
+            break;
+            case 2:
+                New_Sueldo = Sueldo + (Sueldo * 0.10);
+            break;
+            case 3:
+                New_Sueldo = Sueldo + (Sueldo * 0.08);
+            break;
+            case 4:
+                New_Sueldo = Sueldo + (Sueldo * 0.07);
+            break;
+            default:
+                alert("Por favor, ingrese una categoria valida ");
+            break;
+        }
+            alert(`Su categoria es: "${cat}`);
+            alert(`Su sueldo anterior es "${Sueldo} $`);
+            alert(`Su nuevo sueldo es "${New_Sueldo} $`);
+            </script>
+        </body>
+    </head>    
+</html>
